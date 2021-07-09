@@ -1,0 +1,93 @@
+.contact-container h1 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.contact .contact__options {
+  display: flex;
+  font-size: 30px;
+  padding: 3rem 0;
+  justify-content: center;
+}
+
+.contact .contact__options a + a {
+  margin-left: 1rem;
+}
+
+.contact .contact__options .mail {
+  color: red;
+}
+
+.contact .contact__options .facebook {
+  color: #3b5998;
+}
+
+.contact .contact__options .linkedin {
+  color: #0077b5;
+}
+
+.contact .contact__options .telegram {
+  color: #0088cc;
+}
+
+.contact .contact__options a:hover {
+  transform: scale(1.2);
+  transition: 0.3s all ease-in-out;
+}
+
+.contact .contact__image img {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .contact-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .contact .contact__options {
+    font-size: 35px;
+    padding: 4rem 0;
+  }
+
+  .contact .contact__options a + a {
+    margin-left: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-container h1 {
+    font-size: 2.3rem;
+  }
+
+  .contact .contact__options {
+    font-size: 40px;
+    padding: 5rem 0;
+  }
+
+  .contact .contact__options a + a {
+    margin-left: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 7rem 0;
+  }
+
+  .contact .contact__image img {
+    display: block;
+    width: 450px;
+  }
+
+  .contact .contact__options {
+    font-size: 45px;
+  }
+
+  .contact .contact__options a + a {
+    margin-left: 2.3rem;
+  }
+}

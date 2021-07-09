@@ -1,0 +1,104 @@
+.intro {
+  padding: 0 0 3rem 0;
+  margin-bottom: 20px;
+}
+
+.intro .intro__text {
+  margin: 1rem 0;
+}
+
+.intro .intro__text h3 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: grey;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.intro .intro__text h1 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.intro .intro__text p {
+  font-size: 1.05rem;
+}
+
+.intro .intro__image {
+  margin-top: 3rem;
+}
+
+@media (min-width: 576px) {
+  .intro .intro__text {
+    margin: 1rem 0 4rem 0;
+  }
+
+  .intro .intro__text h1 {
+    font-size: 1.85rem;
+  }
+
+  .intro .intro__image img {
+    margin: auto;
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+  .intro .intro__image img {
+    margin: auto;
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 992px) {
+  .intro {
+    display: flex;
+    padding: 9.5rem 0;
+    justify-content: space-between;
+  }
+
+  .intro .intro__text {
+    flex: 1;
+  }
+
+  .intro .intro__text h3 {
+    font-size: 1.5rem;
+  }
+
+  .intro .intro__text h1 {
+    font-size: 2.7rem;
+  }
+
+  .intro .intro__text p {
+    font-size: 1.15rem;
+  }
+
+  .intro .intro__image {
+    flex: 1;
+  }
+
+  .intro .intro__image img {
+    max-width: 120%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .intro .intro__text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .intro .intro__text h1 {
+    font-size: 3.2rem;
+    margin-bottom: 1.45rem;
+  }
+
+  .intro .intro__text p {
+    font-size: 1.2rem;
+  }
+
+  .intro .intro__image img {
+    max-width: 100%;
+  }
+}

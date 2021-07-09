@@ -1,0 +1,92 @@
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem 0.7rem;
+  justify-content: space-between;
+}
+
+.navbar h1 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.navbar .hamburger {
+  height: 40px;
+  width: 40px;
+  background-color: var(--bg-color);
+  outline: none;
+  border: none;
+}
+
+.navbar .hamburger svg {
+  color: var(--primary-color);
+}
+
+.navbar .hamburger svg .close {
+  display: none;
+}
+
+.navbar .menu {
+  flex-basis: 100%;
+  display: none;
+}
+
+.navbar .menu li {
+  font-size: 1.05rem;
+  font-weight: 500;
+  display: block;
+}
+
+.navbar .menu li + li {
+  margin-top: 1rem;
+}
+
+.navbar .menu li a {
+  text-align: center;
+  display: block;
+}
+
+.navbar.expanded .menu {
+  display: block;
+}
+
+.navbar.expanded .hamburger .close {
+  display: block;
+}
+
+.navbar.expanded .hamburger .open {
+  display: none;
+}
+
+.theme-switch-button {
+  border: none;
+  font-size: 25px;
+  background-color: var(--bg-color);
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    padding: 0.5rem 2rem;
+  }
+
+  .navbar .hamburger {
+    display: none;
+  }
+
+  .navbar .menu {
+    display: block;
+    flex-basis: auto;
+  }
+
+  .navbar .menu li {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+  }
+
+  .navbar .menu li + li {
+    margin-left: 1.5rem;
+  }
+}

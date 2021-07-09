@@ -1,0 +1,41 @@
+.sections {
+  padding: 1rem;
+}
+
+.projects .projects__heading h1 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .sections {
+    padding: 1rem 2.5rem;
+  }
+
+  .projects .projects__heading h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .sections {
+    padding: 1rem 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .sections {
+    padding: 0 8rem;
+  }
+
+  .projects .projects__heading h1 {
+    font-size: 2.3rem;
+  }
+
+  .projects__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
